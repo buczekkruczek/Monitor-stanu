@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Status obecności</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      font-family: Helvetica, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .status {
+      font-size: 48px;
+      text-align: center;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    .present {
+      background-color: green;
+    }
+
+    .absent {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="status">
+    Status obecności:
+    <span class="dot present" title="obecny"></span>
+    <!-- Aby zmienić status, zamień klasę 'present' na 'absent' -->
+  </div>
+
+</body>
+</html>
